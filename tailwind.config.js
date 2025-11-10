@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import withMT from "@material-tailwind/react/utils/withMT";
-
-export default withMT({
+export default {
   content: [
     "./index.html",
     "./src/**/*.{js,jsx}",
@@ -15,9 +13,12 @@ export default withMT({
         borderGray: "#c3c3c3",
       },
       backgroundImage: {
-        triotree: "linear-gradient(101.02deg, #FFFFFF 37.92%, #F1FFDF 100.33%)",
+        triotree: "linear-gradient(101deg, #FFFFFF 38%, #F1FFDF 100%)",
+      },
+      screens: {
+        custom1517: "1517px",
       },
     },
   },
   plugins: [],
-});
+};

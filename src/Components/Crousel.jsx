@@ -76,16 +76,16 @@ export default function CarouselWithContent() {
                         {/* Left Section */}
                         <div className="w-full md:w-1/2 space-y-5 text-left">
                             <div className="border-l-4 border-green-500 pl-3">
-                                <h1 className="font-semibold text-gray-900 text-5xl md:text-6xl">
+                                <h1 className="font-semibold text-gray-900 text-5xl md:text-6xl 2xl:text-7xl">
                                     {item.title}
                                 </h1>
-                                <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
+                                <h2 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold text-gray-800">
                                     {item.subtitle}
                                 </h2>
                             </div>
                             <div className="text-gray-600 leading-relaxed">
-                                <p>{item.description}</p>
-                                <p className="text-[#3E3E3E] font-semibold mt-2">
+                                <p className="text-sm">{item.description}</p>
+                                <p className="text-[#3E3E3E] 2xl:text-lg font-semibold mt-2">
                                     {item.highlight}
                                 </p>
                             </div>

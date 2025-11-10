@@ -77,7 +77,7 @@ export default function MainBody() {
 
   requestAnimationFrame(animate);
 }, []);
-
+// https://triotreelandingpage.vercel.app/
   return (
     <section>
       <div class="bg-[#1FA33E] text-white flex justify-between items-center py-4 px-20 rounded-r-full mr-30">
@@ -94,15 +94,15 @@ export default function MainBody() {
                 </span>
                 {item.variable}
               </p>
-              <p className="text-sm">{item.label}</p>
+              <p className="text-sm 2xl:text-lg">{item.label}</p>
             </div>
           </div>
         ))}
       </div>
       <div class="py-12 bg-white">
         <div class="max-w-5xl mx-20">
-          <p class="text-blue-600 text-md font-medium mb-2">Our Products</p>
-          <h2 class="text-3xl md:text-3xl font-bold leading-snug">
+          <p class="text-blue-600 text-sm 2xl:text-lg font-medium mb-2">Our Products</p>
+          <h2 class="text-3xl md:text-3xl 2xl:text-4xl font-bold leading-snug">
             <div>
             <div>HISTree – Transforming Healthcare Workflow </div>
             <div class=""> through Effortless, &nbsp;&nbsp; Efficient &amp; Quality Driven Product Innovation</div>
@@ -117,13 +117,13 @@ export default function MainBody() {
                 <img
                   src={item.icon}
                   alt={item.label}
-                  className="h-14 w-13"
+                  className="h-14 w-13 2xl:h-22 2xl:w-20"
                 ></img>
               </div>
               <div>
-                <label className="font-bold">{item.title}</label>
+                <label className="font-bold 2xl:text-lg">{item.title}</label>
               </div>
-              <div className="text-xs">
+              <div className="text-xs 2xl:text-sm">
                 <label >{item.label}</label>
               </div>
             </div>
@@ -133,20 +133,20 @@ export default function MainBody() {
       <div className="w-full bg-size-[100%] h-screen bg-no-repeat" style={{ backgroundImage: `url(${Services_area})` }}>
         <div class="py-12 w-1/2">
           <div class="max-w-5xl mx-20">
-            <p class="text-blue-600 text-md font-medium mb-2">Our Services</p>
-            <h2 class="text-3xl md:text-3xl font-bold leading-snug">
+            <p class="text-blue-600 text-sm 2xl:text-lg font-medium mb-2">Our Services</p>
+            <h2 class="text-3xl md:text-3xl 2xl:text-4xl font-bold leading-snug">
               <div>High Quality Services for You</div></h2>
-            <p class="text-[#222222] mt-3 text-base md:text-lg">TrioTree offers expert technical and project management consultants to hospitals and laboratories. With proven experience, we provide comprehensive strategy and implementation services for healthcare development.</p></div>
-          <div className="max-w-md mr-20 ml-17 my-10">
+            <p class="text-[#222222] mt-3 text-base md:text-lg 2xl:text-xl">TrioTree offers expert technical and project management consultants to hospitals and laboratories. With proven experience, we provide comprehensive strategy and implementation services for healthcare development.</p></div>
+          <div className="max-w-md  2xl:max-w-lg mr-20 ml-17 my-10">
             {
               Services.map((item, index) => (
                 <div key={index} className="feature-item flex justify-around my-8 content-center">
-                  <div className="bg-[#1FA33E] h-14 w-14 content-center justify-items-center">
-                    <img src={item.icon} alt={item.title} className="h-9 w-10" />
+                  <div className="bg-[#1FA33E] h-14 w-14 2xl:h-16 2xl:w-16   content-center justify-items-center">
+                    <img src={item.icon} alt={item.title} className="h-9 w-10 2xl:h-11  2xl:w-12" />
                   </div>
                   <div className="content-center">
-                    <h6 className="font-semibold">{item.title}</h6>
-                    <h6 className="text-sm">{item.description}</h6>
+                    <h6 className="font-semibold 2xl:text-lg">{item.title}</h6>
+                    <h6 className="text-sm 2xl:text-base">{item.description}</h6>
                   </div>
                 </div>
               ))
@@ -156,79 +156,79 @@ export default function MainBody() {
       </div>
       <div class="py-12">
         <div class="mx-20">
-          <p class="text-blue-600 text-md font-medium mb-2">About Us</p>
-          <h2 class="text-3xl md:text-3xl font-bold leading-snug"><div>Short Story About Triotree.</div></h2>
-          <p class="text-[#222222] mt-3 text-base text-md">At TrioTree Technologies we combine technology, enterprise and innovation to bring you next generation Healthcare Solutions</p>
+          <p class="text-blue-600 text-sm 2xl:text-lg font-medium mb-2">About Us</p>
+          <h2 class="text-3xl md:text-3xl 2xl:text-4xl font-bold leading-snug"><div>Short Story About Triotree.</div></h2>
+          <p class="text-[#222222] mt-3 text-base 2xl:text-lg">At TrioTree Technologies we combine technology, enterprise and innovation to bring you next generation Healthcare Solutions</p>
           <div className="flex items-center my-5">
             <div className="w-1/2">
               <h3 className="text-xl font-bold leading-snug">Our Story</h3>
-              <p class="text-[#222222] mt-3 text-md">TrioTree Technologies is one of the leading providers of healthcare solutions in India,UK and the Middle-East. TrioTree Technologies was founded by a group of doctors and engineers with decades of experience in the healthcare domain. The founders have conceptualised, designed and deployed a variety of large scale systems for the healthcare industry to streamline business operations and to create a framework for clinical and strategic decision making.</p>
+              <p class="text-[#222222] mt-3 text-sm 2xl:text-lg">TrioTree Technologies is one of the leading providers of healthcare solutions in India,UK and the Middle-East. TrioTree Technologies was founded by a group of doctors and engineers with decades of experience in the healthcare domain. The founders have conceptualised, designed and deployed a variety of large scale systems for the healthcare industry to streamline business operations and to create a framework for clinical and strategic decision making.</p>
             </div>
             <div className="w-1/2">
-              <img src={officeimg} alt="Triotree Office" className="h-70 object-cover w-full" /></div>
+              <img src={officeimg} alt="Triotree Office" className="h-70 2xl:h-90 object-cover w-full" /></div>
           </div>
         </div>
       </div>
       <Gallery />
       <div class="py-12 mx-20 flex justify-between">
         <div className="w-2/5 flex flex-col py-10 gap-5">
-          <div className="text-3xl md:text-3xl font-bold leading-snug"><h2>What our clients are saying</h2></div>
-          <div><label htmlFor="" className="text-[#12852D] pr-15 font-medium leading-snug text-3xl">Help us improve our
+          <div className="text-3xl md:text-3xl 2xl:text-4xl  font-bold leading-snug"><h2>What our clients are saying</h2></div>
+          <div><label htmlFor="" className="text-[#12852D] pr-15 font-medium leading-snug text-3xl 2xl:text-4xl">Help us improve our
             productivity</label></div>
-          <div className="text-sm">
+          <div className="text-sm 2xl:text-lg">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
-          <div className="flex justify-center gap-10 py-2">
+          <div className="flex gap-10 py-2">
             <div className="flex items-center gap-3 bg-white">
-              <div className="w-18 h-18 flex items-center justify-center rounded-full ">
+              <div className="w-18 h-18 2xl:w-22 2xl:h-22 flex items-center justify-center rounded-full ">
                 <img src={rajagiri} alt={rajagiri} className="w-full object-contain" />
               </div>
               <div>
-                <div className="font-semibold text-sm">Rajagiri Hospital</div>
-                <p className="text-xs">Near GTN Junction, Munnar Rd, Chungamvely, Aluva, Kochi, Kerala 683112</p>
+                <div className="font-semibold text-sm 2xl:text-base">Rajagiri Hospital</div>
+                <p className="text-xs 2xl:text-sm">Near GTN Junction, Munnar Rd, Chungamvely, Aluva, Kochi, Kerala 683112</p>
               </div>
             </div>
           </div>
         </div>
         <div className="w-2/5 flex flex-col py-10 gap-5">
-          <div className="text-3xl md:text-3xl font-bold leading-snug flex justify-end"><div><Link to={URL}><img src={arrow} alt="Arrow" /></Link></div></div>
-          <div><label htmlFor="" className="text-[#12852D] font-medium leading-snug text-3xl">Manage Project much easier
+          <div className="text-3xl md:text-3xl 2xl:text-4xl font-bold leading-snug flex justify-end"><div><Link to={URL}><img src={arrow} alt="Arrow" /></Link></div></div>
+          <div><label htmlFor="" className="text-[#12852D] font-medium leading-snug text-3xl 2xl:text-4xl">Manage Project much easier
             with this tool</label></div>
-          <div className="text-sm">
+          <div className="text-sm 2xl:text-lg">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
-          <div className="flex justify-center gap-10 py-2">
+          <div className="flex gap-10 py-2">
             <div className="flex items-center gap-3 bg-white">
-              <div className="w-18 h-18 flex items-center justify-center rounded-full ">
+              <div className="w-18 h-18 2xl:w-22 2xl:h-22 flex items-center justify-center rounded-full ">
                 <img src={ayushman} alt={ayushman} className="w-full object-contain" />
               </div>
               <div>
-                <div className="font-semibold text-sm">Ayushman Hospital</div>
-                <p className="text-xs">Near GTN Junction, Munnar Rd, Chungamvely, Aluva, Kochi, Kerala 683112</p>
+                <div className="font-semibold text-sm 2xl:text-base">Ayushman Hospital</div>
+                <p className="text-xs 2xl:text-sm">Near GTN Junction, Munnar Rd, Chungamvely, Aluva, Kochi, Kerala 683112</p>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="py-12 px-20 bg-[#EEF8F0] gap-2.5">
-        <div className="text-3xl md:text-3xl mb-6 font-semibold leading-snug"><h2>Blogs articles</h2></div>
+        <div className="text-3xl md:text-3xl 2xl:text-4xl mb-6 font-semibold leading-snug"><h2>Blogs articles</h2></div>
         <div className="flex justify-between gap-2.5">
           <div className="p-2.5 bg-white rounded-md w-3/5">
             <div className="w-full h-56 relative">
-              <div className="absolute right-0 top-10 bg-[#BFD015] rounded-bl-full rounded-tl-full p-2 font-semibold"><label htmlFor="Date">01, Jan 2024</label></div>
+              <div className="absolute right-0 top-10 bg-[#BFD015] rounded-bl-full rounded-tl-full p-2 2xl:text-lg font-semibold"><label htmlFor="Date">01, Jan 2024</label></div>
               <img className="w-full h-full object-cover rounded-md" src={blogpost1} alt={blogpost1} />
             </div>
             <div className="p-2.5">
               <div className="flex justify-between">
-                <div className="font-bold">Impact of Winter on Our Health</div>
+                <div className="font-bold 2xl:text-lg">Impact of Winter on Our Health</div>
                 <span className="flex gap-1.5 items-center">
                   <label htmlFor="LikeCount" className="text-[#8A8A8A] font-bold">100</label>
                   <img className="" alt={heart} src={heart}></img>
                 </span>
               </div>
-              <div className="text-xs"><span className="border-r">Posted in Healthcare, Healthcare Technology </span><span className="px-1">No comments</span></div>
+              <div className="text-xs 2xl:text-sm"><span className="border-r">Posted in Healthcare, Healthcare Technology </span><span className="px-1">No comments</span></div>
               <hr className="text-[#BCBCBC] border-[#BCBCBC] my-2" />
-              <div className="text-sm leading-relaxed">
+              <div className="text-sm  2xl:text-base leading-relaxed">
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the...
                 </p>
@@ -238,71 +238,71 @@ export default function MainBody() {
           <div className="flex gap-2.5 flex-col w-2/5">
             <div className="flex p-2.5 bg-white rounded-md">
               <div className="w-1/4 h-28 relative">
-                <div className="absolute left-0 top-5 bg-[#BFD015] rounded-br-full rounded-tr-full p-1 text-xs font-semibold">
+                <div className="absolute left-0 top-5 bg-[#BFD015] rounded-br-full rounded-tr-full p-1 text-xs 2xl:text-sm font-semibold">
                   <label htmlFor="Date">01, Jan 2024</label>
                 </div>
                 <img className="w-full h-full object-cover rounded-md" src={blogpost1} alt={blogpost1} />
               </div>
               <div className="p-2.5 w-3/4">
                 <div className="flex justify-between">
-                  <div className="text-sm font-bold">Impact of Winter on Our Health</div>
+                  <div className="text-sm 2xl:text-base font-bold">Impact of Winter on Our Health</div>
                   <span className="flex gap-1.5 items-center">
                     <label htmlFor="LikeCount" className="text-[#8A8A8A] text-sm font-bold"></label>
                     <img className="h-5 w-5" alt={heart} src={heart}></img>
                   </span>
                 </div>
-                <div className="text-xs"><span className="border-r">Posted in Healthcare, Healthcare Technology </span><span className="px-1">No comments</span></div>
+                <div className="text-xs 2xl:text-sm"><span className="border-r">Posted in Healthcare, Healthcare Technology </span><span className="px-1">No comments</span></div>
                 <hr className="text-[#BCBCBC] border-[#BCBCBC] my-2" />
                 <div className="text-sm leading-relaxed">
-                  <p className="w-full overflow-hidden text-ellipsis whitespace-nowrap">
+                  <p className="w-full overflow-hidden 2xl:text-lg text-ellipsis whitespace-nowrap">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="flex p-2.5 bg-white rounded-md">
+             <div className="flex p-2.5 bg-white rounded-md">
               <div className="w-1/4 h-28 relative">
-                <div className="absolute left-0 top-5 bg-[#BFD015] rounded-br-full rounded-tr-full p-1 text-xs font-semibold">
+                <div className="absolute left-0 top-5 bg-[#BFD015] rounded-br-full rounded-tr-full p-1 text-xs 2xl:text-sm font-semibold">
                   <label htmlFor="Date">01, Jan 2024</label>
                 </div>
                 <img className="w-full h-full object-cover rounded-md" src={blogpost1} alt={blogpost1} />
               </div>
               <div className="p-2.5 w-3/4">
                 <div className="flex justify-between">
-                  <div className="text-sm font-bold">Impact of Winter on Our Health</div>
+                  <div className="text-sm 2xl:text-base font-bold">Impact of Winter on Our Health</div>
                   <span className="flex gap-1.5 items-center">
                     <label htmlFor="LikeCount" className="text-[#8A8A8A] text-sm font-bold"></label>
                     <img className="h-5 w-5" alt={heart} src={heart}></img>
                   </span>
                 </div>
-                <div className="text-xs"><span className="border-r">Posted in Healthcare, Healthcare Technology </span><span className="px-1">No comments</span></div>
+                <div className="text-xs 2xl:text-sm"><span className="border-r">Posted in Healthcare, Healthcare Technology </span><span className="px-1">No comments</span></div>
                 <hr className="text-[#BCBCBC] border-[#BCBCBC] my-2" />
                 <div className="text-sm leading-relaxed">
-                  <p className="w-full overflow-hidden text-ellipsis whitespace-nowrap">
+                  <p className="w-full overflow-hidden 2xl:text-lg text-ellipsis whitespace-nowrap">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="flex p-2.5 bg-white rounded-md">
+             <div className="flex p-2.5 bg-white rounded-md">
               <div className="w-1/4 h-28 relative">
-                <div className="absolute left-0 top-5 bg-[#BFD015] rounded-br-full rounded-tr-full p-1 text-xs font-semibold">
+                <div className="absolute left-0 top-5 bg-[#BFD015] rounded-br-full rounded-tr-full p-1 text-xs 2xl:text-sm font-semibold">
                   <label htmlFor="Date">01, Jan 2024</label>
                 </div>
                 <img className="w-full h-full object-cover rounded-md" src={blogpost1} alt={blogpost1} />
               </div>
               <div className="p-2.5 w-3/4">
                 <div className="flex justify-between">
-                  <div className="text-sm font-bold">Impact of Winter on Our Health</div>
+                  <div className="text-sm 2xl:text-base font-bold">Impact of Winter on Our Health</div>
                   <span className="flex gap-1.5 items-center">
                     <label htmlFor="LikeCount" className="text-[#8A8A8A] text-sm font-bold"></label>
                     <img className="h-5 w-5" alt={heart} src={heart}></img>
                   </span>
                 </div>
-                <div className="text-xs"><span className="border-r">Posted in Healthcare, Healthcare Technology </span><span className="px-1">No comments</span></div>
+                <div className="text-xs 2xl:text-sm"><span className="border-r">Posted in Healthcare, Healthcare Technology </span><span className="px-1">No comments</span></div>
                 <hr className="text-[#BCBCBC] border-[#BCBCBC] my-2" />
                 <div className="text-sm leading-relaxed">
-                  <p className="w-full overflow-hidden text-ellipsis whitespace-nowrap">
+                  <p className="w-full overflow-hidden 2xl:text-lg text-ellipsis whitespace-nowrap">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                   </p>
                 </div>
@@ -313,27 +313,27 @@ export default function MainBody() {
       </div>
       <div className="flex flex-col md:flex-row items-center justify-between mx-20 py-12 bg-white gap-10">
         <div className="md:w-1/2">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl 2xl:text-4xl font-bold text-gray-900 mb-4">
             Awards & Accolades
           </h2>
-          <p className="text-green-700 font-semibold mb-10 leading-snug">
+          <p className="text-green-700 font-semibold mb-10 leading-snug 2xl:text-lg">
             Redefining quality improvement in healthcare organizations worldwide
           </p>
           <ul className="list-disc pl-5 text-gray-700 space-y-3">
             {awardsList.map((award, index) => (
-              <li key={index}>{award}</li>
+              <li className="2xl:text-lg" key={index}>{award}</li>
             ))}
           </ul>
         </div>
         <div className="md:w-1/2 relative flex justify-center items-center">
           <div className="relative flex flex-wrap justify-center gap-3">
-            <img src={awards} alt="Main Award" className="w-120 rounded-lg" />
+            <img src={awards} alt="Main Award" className="w-120 2xl:w-150 rounded-lg" />
           </div>
         </div>
       </div>
       <div className="px-20 bg-[#12852D] flex gap-2.5">
         <div className="w-1/7 flex items-center pr-5 border-r border-[#ffffff] my-2.5">
-          <div className="text-xl md:text-2xl text-white font-semibold leading-snug">
+          <div className="text-xl md:text-2xl 2xl:text-3xl text-white font-semibold leading-snug">
             Our Partners
           </div>
         </div>

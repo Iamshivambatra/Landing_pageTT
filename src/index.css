@@ -2,9 +2,11 @@
 @import "@fontsource/poppins/500.css";
 @import "@fontsource/poppins/600.css";
 @import "@fontsource/poppins/700.css";
+
 @import "lightgallery/css/lightgallery.css";
 @import "lightgallery/css/lg-zoom.css";
 @import "lightgallery/css/lg-thumbnail.css";
+
 @import "tailwindcss";
 
 
@@ -311,3 +313,10 @@ body {
   transform: translateX(0);
 }
 
+.Prd4{
+  border: none;
+}
+
+.marquee_scroll:hover .marquee__content_scroll {
+  animation-play-state: paused;
+}

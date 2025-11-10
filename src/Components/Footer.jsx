@@ -18,20 +18,20 @@ export default function Footer() {
         <footer>
             <div className="py-12 mx-20 flex gap-4">
                 <div className="w-3/5">
-                    <div><h2 className="text-3xl text-[#1FA33E] font-bold mb-6">Let's Connect!</h2></div>
-                    <div className="text-3xl font-bold mb-4">Our experts help you achieve your dream</div>
-                    <div className="text-lg font-medium mb-4">An expert support makes it possible!</div>
+                    <div><h2 className="text-3xl 2xl:text-4xl text-[#1FA33E] font-bold mb-6">Let's Connect!</h2></div>
+                    <div className="text-3xl 2xl:text-4xl font-bold mb-4">Our experts help you achieve your dream</div>
+                    <div className="text-lg 2xl:text-xl font-medium mb-4">An expert support makes it possible!</div>
                     <div className="w-full h-87 2xl:h-100"><img className='h-full object-cover w-full' src={ConnectLady} alt={ConnectLady} /></div>
                 </div>
                 <div className="w-3/5 flex">
                     <div className='Arrow_Left'></div>
                     <div className='bg-[#EFF3CD] w-full h-full'>
                         <div className="flex justify-center items-center p-8">
-                            <form action="/index" method="post" className="flex flex-col w-full gap-4">
-                                <input type="text" placeholder="Full Name" className="bg-white border border-gray-200 px-3 py-2 text-sm outline-none focus:border-[#1FA33E]" />
-                                <input type="tel" placeholder="Contact No." className="bg-white border border-gray-200 px-3 py-2 text-sm outline-none focus:border-[#1FA33E]" />
-                                <input type="email" placeholder="Email ID" className="bg-white border border-gray-200 px-3 py-2 text-sm outline-none focus:border-[#1FA33E]" />
-                                <textarea placeholder="Address" className="bg-white border border-gray-200 overflow-auto h-64 px-3 py-2 text-sm outline-none resize-none focus:border-[#1FA33E]" rows="3"></textarea>
+                            <form action="/index" method="post" className="flex flex-col w-full gap-4 2xl:text-xl">
+                                <input type="text" placeholder="Full Name" className="bg-white border border-gray-200 px-3 py-2 text-sm 2xl:text-base outline-none focus:border-[#1FA33E]" />
+                                <input type="tel" placeholder="Contact No." className="bg-white border border-gray-200 px-3 py-2 text-sm 2xl:text-base outline-none focus:border-[#1FA33E]" />
+                                <input type="email" placeholder="Email ID" className="bg-white border border-gray-200 px-3 py-2 text-sm 2xl:text-base outline-none focus:border-[#1FA33E]" />
+                                <textarea placeholder="Address" className="bg-white border border-gray-200 overflow-auto h-64 2xl:h-75 px-3 py-2 2xl:text-base text-sm outline-none resize-none focus:border-[#1FA33E]" rows="3"></textarea>
                                 <button type="submit" className="bg-[#1FA33E] text-white font-semibold uppercase py-2 hover:bg-green-700 transition-all duration-200">Submit</button>
                             </form>
                         </div>
@@ -59,7 +59,7 @@ export default function Footer() {
                 <div className="grid grid-cols-4 gap-8">
                     <div className="pr-6">
                         <img src={logo} alt="Triotree Logo" className="w-28 mb-3" />
-                        <p className="text-sm leading-normal text-justify py-1">
+                        <p className="text-sm 2xl:text-base leading-normal text-justify py-1">
                             <strong>TrioTree Technologies</strong> is one of the leading
                             providers of healthcare solutions in India, UK and the Middle-East.
                             TrioTree Technologies was founded by a group of doctors and
@@ -68,7 +68,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <div className="text-[#1FA33E] font-semibold mb-6">More Links</div>
-                        <ul className="list-disc list-inside text-sm space-y-5">
+                        <ul className="list-disc list-inside text-sm 2xl:text-base space-y-5">
                             <li>About us</li>
                             <li>Services</li>
                             <li>Why Choose Us</li>
@@ -78,7 +78,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <div className="text-[#1FA33E] font-semibold mb-6">More Links</div>
-                        <ul className="list-disc list-inside text-sm space-y-5">
+                        <ul className="list-disc list-inside text-sm 2xl:text-base space-y-5">
                             <li>Integration Services</li>
                             <li>Implementation Services</li>
                             <li>Blogs</li>
@@ -88,7 +88,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <div className="text-[#1FA33E] font-semibold mb-6">Contact Us</div>
-                        <ul className="space-y-9 text-sm">
+                        <ul className="space-y-9 text-sm 2xl:text-base">
                             <li className="flex items-center gap-2">
                                 <PhoneIcon className="w-4 h-4 text-[#BFD015]" />
                                 +91-120-4165164
@@ -110,14 +110,14 @@ export default function Footer() {
                             <div className='rounded-full bg-[#FAFFCC] p-2'><img src={FacebookIcon} alt={FacebookIcon} className="w-4 h-4 text-[#BFD015] cursor-pointer" /></div>
                             <div className='rounded-full bg-[#FAFFCC] p-2'><img src={twittericon} alt={twittericon} className="w-4 h-4 text-[#BFD015] cursor-pointer" /></div>
                             <div className='rounded-full bg-[#FAFFCC] p-2'> <img src={LinkedinIcon} alt={LinkedinIcon} className="w-4 h-4 text-[#BFD015] cursor-pointer" /></div>
-                            <button className="border border-[#BFD015] text-[#1FA33E] text-xs px-2 py-0.5 rounded hover:bg-[#1FA33E] hover:text-white transition">
+                            <button className="border border-[#BFD015] text-[#1FA33E] text-xs 2xl:text-sm px-2 py-0.5 rounded hover:bg-[#1FA33E] hover:text-white transition">
                                 Brochure Download
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='py-3 px-20 bg-[#D8E6DB] text-sm items-center gap-2 flex flex-wrap justify-between'>
+            <div className='py-3 px-20 bg-[#D8E6DB] text-sm 2xl:text-base items-center gap-2 flex flex-wrap justify-between'>
                 <p className="text-center flex">
                     © 2014 - 2025 <strong className='px-2'>Triotree Technologies Pvt. Ltd.</strong><span className='px-2 border-r'>All Rights Reserved</span>
                     <span className='px-2 '>Triotree Technologies Rated{" "}</span>

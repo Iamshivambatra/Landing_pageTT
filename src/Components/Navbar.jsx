@@ -30,7 +30,7 @@ export default function Navbar() {
       <nav className="flex items-center justify-between px-6 lg:pr-19 lg:pl-20 py-3">
         {/* Left - Logo */}
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="Triotree Logo" className="h-10 w-auto" />
+          <img src={logo} alt="Triotree Logo" className="h-10 2xl:h-11 w-auto" />
         </div>
 
         {/* Center - Links (Desktop) */}
@@ -39,12 +39,12 @@ export default function Navbar() {
             <li key={item}>
               <Link
                 onClick={() => setActive(item)}
-                className={`relative py-[23px] font-medium text-sm transition-all duration-300 ease-out
+                className={`relative py-[23px] 2xl:text-lg font-medium text-sm transition-all duration-300 ease-out
                 ${active === item
                     ? "text-black after:scale-x-100"
                     : "text-gray-600 hover:text-black after:scale-x-0"
                   }
-                after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:bg-[#8DC04A] 
+                after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-0.5 2xl:after:h-0.75 after:w-full after:bg-[#8DC04A] 
                 after:origin-left after:transition-transform after:duration-300 after:ease-out`}
               >
                 {item}
@@ -55,7 +55,7 @@ export default function Navbar() {
 
         {/* Right - Button */}
         <div className="flex items-center gap-3">
-          <button className="hidden lg:block border border-blue-400 text-blue-500 text-xs font-semibold px-4 py-2 rounded-full hover:bg-blue-50 transition-all duration-200">
+          <button className="hidden lg:block border border-blue-400 text-blue-500 text-xs 2xl:text-sm font-semibold px-4 py-2 rounded-full hover:bg-blue-50 transition-all duration-200">
             BOOK A DEMO
           </button>
 
@@ -93,7 +93,7 @@ export default function Navbar() {
                   setActive(item);
                   setMenuOpen(false);
                 }}
-                className={`relative py-1 font-medium text-sm transition-all duration-300 ease-out
+                className={`relative py-1 font-medium text-sm xxl:text:xl transition-all duration-300 ease-out
                 ${active === item
                     ? "text-black after:scale-x-100"
                     : "text-gray-600 hover:text-black after:scale-x-0"
