@@ -102,10 +102,10 @@ export default function MainBody() {
       <div class="py-12 bg-white">
         <div class="max-w-5xl mx-20">
           <p class="text-blue-600 text-sm 2xl:text-lg font-medium mb-2">Our Products</p>
-          <h2 class="text-3xl md:text-3xl 2xl:text-4xl font-bold leading-snug">
+          <h2 class="text-3xl md:text-3xl 2xl:text-4xl font-bold leading-snug max-w-[84%] 2xl:max-w-[100%]">
             <div>
-            <div>HISTree – Transforming Healthcare Workflow </div>
-            <div class=""> through Effortless, &nbsp;&nbsp; Efficient &amp; Quality Driven Product Innovation</div>
+            <div>HISTree – Transforming Healthcare Workflow</div>
+            <div class=""> through &nbsp; Effortless, Efficient &amp; Quality Driven Product Innovation</div>
             </div>
             </h2>
             
