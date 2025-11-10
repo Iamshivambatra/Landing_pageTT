@@ -102,7 +102,7 @@ export default function MainBody() {
       <div class="py-12 bg-white">
         <div class="max-w-5xl mx-20">
           <p class="text-blue-600 text-sm 2xl:text-lg font-medium mb-2">Our Products</p>
-          <h2 class="text-3xl md:text-3xl 2xl:text-4xl font-bold leading-snug max-w-[84%] 2xl:max-w-[100%]">
+          <h2 class="text-3xl md:text-3xl 2xl:text-4xl font-bold leading-snug max-w-[84%] 2xl:max-w-full">
             <div>
             <div>HISTree – Transforming Healthcare Workflow</div>
             <div class=""> through &nbsp; Effortless, Efficient &amp; Quality Driven Product Innovation</div>
@@ -112,7 +112,7 @@ export default function MainBody() {
           <p class="text-[#222222] mt-3 text-base md:text-lg">TrioTree has a suite-of-the-art products and digital systems that change the way care is delivered.</p></div>
         <div className="flex mx-15 pt-7 mb-6 gap-2.5">
           {Products.map((item, index) => (
-            <div key={index} className={`border-r border-r-[#BFD015] bg-cover py-6 px-4  Prd Prd${index}`}>
+            <div key={index} className={`border-r border-r-[#BFD015] bg-cover py-6 px-4 2xl:px-10 Prd Prd${index}`}>
               <div className="mb-2.5">
                 <img
                   src={item.icon}
@@ -123,14 +123,14 @@ export default function MainBody() {
               <div>
                 <label className="font-bold 2xl:text-lg">{item.title}</label>
               </div>
-              <div className="text-xs 2xl:text-sm">
+              <div className="text-xs 2xl:text-base">
                 <label >{item.label}</label>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="w-full bg-size-[100%] h-screen bg-no-repeat" style={{ backgroundImage: `url(${Services_area})` }}>
+      <div className="w-full bg-size-[100%] py-10 bg-no-repeat" style={{ backgroundImage: `url(${Services_area})` }}>
         <div class="py-12 w-1/2">
           <div class="max-w-5xl mx-20">
             <p class="text-blue-600 text-sm 2xl:text-lg font-medium mb-2">Our Services</p>
@@ -141,8 +141,8 @@ export default function MainBody() {
             {
               Services.map((item, index) => (
                 <div key={index} className="feature-item flex justify-around my-8 content-center">
-                  <div className="bg-[#1FA33E] h-14 w-14 2xl:h-16 2xl:w-16   content-center justify-items-center">
-                    <img src={item.icon} alt={item.title} className="h-9 w-10 2xl:h-11  2xl:w-12" />
+                  <div className="bg-[#1FA33E] h-14 w-14 2xl:h-20 2xl:w-20   content-center justify-items-center">
+                    <img src={item.icon} alt={item.title} className="h-9 w-10 2xl:h-16  2xl:w-17" />
                   </div>
                   <div className="content-center">
                     <h6 className="font-semibold 2xl:text-lg">{item.title}</h6>

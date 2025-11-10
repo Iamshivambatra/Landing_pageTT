@@ -78,9 +78,10 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("./assets/Images/Bg_his.svg") no-repeat center left 30px / contain;
+  background: url("./assets/Images/Bg_his.svg") no-repeat center center / contain;
   transform-origin: center;
   z-index: 0;
+  left: -30px;
   background-size: 130px;
 }
 
@@ -130,7 +131,7 @@
   background: url("./assets/Images/Dashboard_bg.svg") no-repeat center center / contain;
   transform-origin: center;
   z-index: 0;
-  left: -70px;
+  left: -80px;
   background-size: 130px;
 }
 
@@ -319,4 +320,10 @@ body {
 
 .marquee_scroll:hover .marquee__content_scroll {
   animation-play-state: paused;
+}
+
+@media (min-width: 1440px) {
+  .Prd::before{
+  background-size: 180px !important;
+}
 }
