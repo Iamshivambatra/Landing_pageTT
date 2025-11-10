@@ -47,7 +47,7 @@ export default function Gallery() {
                                     <img
                                         src={img}
                                         alt="Gallery"
-                                        className="h-52 w-full object-cover transform transition-transform duration-500 hover:scale-110"
+                                        className="h-52 w-full object-cover transform transition-transform duration-500 hover:scale-110 2xl:h-75"
                                     />
                                 </a>
                             </li>
@@ -64,7 +64,7 @@ export default function Gallery() {
                                     <img
                                         src={img}
                                         alt="Gallery"
-                                        className="h-52 w-full object-cover transform transition-transform duration-500 hover:scale-110"
+                                        className="h-52 w-full object-cover transform transition-transform duration-500 hover:scale-110 2xl:h-75"
                                     />
                                 </a>
                             </li>
@@ -82,7 +82,7 @@ export default function Gallery() {
                                     <img
                                         src={img}
                                         alt="Gallery"
-                                        className="h-52 w-full object-cover transform transition-transform duration-500 hover:scale-110"
+                                        className="h-52 w-full object-cover transform transition-transform duration-500 hover:scale-110 2xl:h-75"
                                     />
                                 </a>
                             </li>
@@ -99,7 +99,7 @@ export default function Gallery() {
                                     <img
                                         src={img}
                                         alt="Gallery"
-                                        className="h-52 w-full object-cover transform transition-transform duration-500 hover:scale-110"
+                                        className="h-52 w-full object-cover transform transition-transform duration-500 hover:scale-110 2xl:h-75"
                                     />
                                 </a>
                             </li>
