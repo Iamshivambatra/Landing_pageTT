@@ -324,6 +324,11 @@ body {
 
 @media (min-width: 1440px) {
   .Prd::before{
+  background-size: 145px !important;
+}
+}
+@media (min-width: 1517px) {
+  .Prd::before{
   background-size: 180px !important;
 }
 }

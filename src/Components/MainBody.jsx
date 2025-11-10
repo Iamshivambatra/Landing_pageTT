@@ -172,10 +172,10 @@ export default function MainBody() {
       <Gallery />
       <div class="py-12 mx-20 flex justify-between">
         <div className="w-2/5 flex flex-col py-10 gap-5">
-          <div className="text-3xl md:text-3xl 2xl:text-4xl  font-bold leading-snug"><h2>What our clients are saying</h2></div>
-          <div><label htmlFor="" className="text-[#12852D] pr-15 font-medium leading-snug text-3xl 2xl:text-4xl">Help us improve our
+          <div className="text-3xl md:text-3xl 2xl:text-4xl  font-bold leading-snug "><h2>What our clients are saying</h2></div>
+          <div><label htmlFor="" className="text-[#12852D] pr-18 font-medium leading-snug text-3xl 2xl:text-4xl">Help us improve our
             productivity</label></div>
-          <div className="text-sm 2xl:text-lg">
+          <div className="text-sm 2xl:text-lg ">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
           <div className="flex gap-10 py-2">
