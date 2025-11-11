@@ -41,17 +41,17 @@ export default function Footer() {
             <div className='flex'>
                 <div className='bg-[#D6F8DE] w-1/2 pl-20 py-12 pr-10'>
                     <div><h2 className="text-3xl font-bold mb-6">Ready to start?</h2></div>
-                    <div className="text-lg font-medium mb-4">Get in-context advice from our experts about your most pressing issues or areas of interest</div>
+                    <div className="text-base 2xl:text-lg font-medium mb-4">Get in-context advice from our experts about your most pressing issues or areas of interest</div>
                     <div className='flex gap-2.5'>
-                        <div className='text-[#12852D] text-lg font-semibold'>Contact us Now</div>
+                        <div className='text-[#12852D] text-base 2xl:text-lg font-semibold'>Contact us Now</div>
                         <div><img src={circleArrow} alt={circleArrow} /></div>
                     </div>
                 </div>
                 <div className='bg-[#E7FFED] w-1/2 py-12 pl-10 pr-20'>
                     <div><h2 className="text-3xl font-bold mb-6">Looking for a Job?</h2></div>
-                    <div className="text-lg font-medium mb-4">We know what it takes to get the job you deserve. join the most successful and innovative research company.</div>
+                    <div className="text-base 2xl:text-lg font-medium mb-4">We know what it takes to get the job you deserve. join the most successful and innovative research company.</div>
                     <div className='flex gap-2.5'>
-                        <div className='text-[#12852D] text-lg font-semibold'>See Open Position</div>
+                        <div className='text-[#12852D] text-base 2xl:text-lg font-semibold'>See Open Position</div>
                         <div><img src={circleArrow} alt={circleArrow} /></div>
                     </div></div>
             </div>
@@ -59,7 +59,7 @@ export default function Footer() {
                 <div className="grid grid-cols-4 gap-8">
                     <div className="pr-6">
                         <img src={logo} alt="Triotree Logo" className="w-28 mb-3" />
-                        <p className="text-sm 2xl:text-base leading-normal text-justify py-1">
+                        <p className="text-xs 2xl:text-sm leading-normal text-justify py-1">
                             <strong>TrioTree Technologies</strong> is one of the leading
                             providers of healthcare solutions in India, UK and the Middle-East.
                             TrioTree Technologies was founded by a group of doctors and
@@ -68,7 +68,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <div className="text-[#1FA33E] font-semibold mb-6">More Links</div>
-                        <ul className="list-disc list-inside text-sm 2xl:text-base space-y-5">
+                        <ul className="list-disc list-inside text-xs 2xl:text-sm space-y-5">
                             <li>About us</li>
                             <li>Services</li>
                             <li>Why Choose Us</li>
@@ -78,7 +78,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <div className="text-[#1FA33E] font-semibold mb-6">More Links</div>
-                        <ul className="list-disc list-inside text-sm 2xl:text-base space-y-5">
+                        <ul className="list-disc list-inside text-xs 2xl:text-sm space-y-5">
                             <li>Integration Services</li>
                             <li>Implementation Services</li>
                             <li>Blogs</li>
@@ -88,7 +88,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <div className="text-[#1FA33E] font-semibold mb-6">Contact Us</div>
-                        <ul className="space-y-9 text-sm 2xl:text-base">
+                        <ul className="space-y-9 text-xs 2xl:text-sm">
                             <li className="flex items-center gap-2">
                                 <PhoneIcon className="w-4 h-4 text-[#BFD015]" />
                                 +91-120-4165164
@@ -117,7 +117,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='py-3 px-20 bg-[#D8E6DB] text-sm 2xl:text-base items-center gap-2 flex flex-wrap justify-between'>
+            <div className='py-3 px-20 bg-[#D8E6DB] text-xs 2xl:text-sm items-center gap-2 flex flex-wrap justify-between'>
                 <p className="text-center flex">
                     © 2014 - 2025 <strong className='px-2'>Triotree Technologies Pvt. Ltd.</strong><span className='px-2 border-r'>All Rights Reserved</span>
                     <span className='px-2 '>Triotree Technologies Rated{" "}</span>
