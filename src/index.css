@@ -9,6 +9,13 @@
 
 @import "tailwindcss";
 
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+
+  --color-borderGray: #c3c3c3;
+
+  --breakpoint-2xl: 1512px;
+}
 
 @layer base {
 
@@ -314,7 +321,7 @@ body {
   transform: translateX(0);
 }
 
-.Prd4{
+.Prd4 {
   border: none;
 }
 
@@ -323,12 +330,13 @@ body {
 }
 
 @media (min-width: 1440px) {
-  .Prd::before{
-  background-size: 145px !important;
+  .Prd::before {
+    background-size: 145px !important;
+  }
 }
-}
+
 @media (min-width: 1517px) {
-  .Prd::before{
-  background-size: 180px !important;
-}
+  .Prd::before {
+    background-size: 180px !important;
+  }
 }

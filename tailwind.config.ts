@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -6,6 +5,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        "2xl": "1512px",
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
@@ -15,10 +17,6 @@ export default {
       backgroundImage: {
         triotree: "linear-gradient(101deg, #FFFFFF 38%, #F1FFDF 100%)",
       },
-      screens: {
-        custom1517: "1517px",
-      },
     },
   },
-  plugins: [],
 };

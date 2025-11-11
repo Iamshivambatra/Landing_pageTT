@@ -78,6 +78,9 @@ export default function MainBody() {
   requestAnimationFrame(animate);
 }, []);
 // https://triotreelandingpage.vercel.app/
+// http://localhost:3000
+// serve -s dist
+
   return (
     <section>
       <div class="bg-[#1FA33E] text-white flex justify-between items-center py-4 px-20 rounded-r-full mr-30">

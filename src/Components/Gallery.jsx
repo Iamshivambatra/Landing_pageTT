@@ -32,7 +32,6 @@ export default function Gallery() {
         <div className="bg-[#BFD01533] p-2.5 flex flex-col gap-2 overflow-hidden">
             <LightGallery
                 speed={500}
-                licenseKey=""
                 plugins={[lgZoom, lgThumbnail]}
                 selector="a"
             >
