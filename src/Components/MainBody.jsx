@@ -137,7 +137,7 @@ export default function MainBody() {
             <p class="text-blue-600 text-sm 2xl:text-lg font-medium mb-2">Our Services</p>
             <h2 class="text-3xl md:text-3xl 2xl:text-4xl font-bold leading-snug">
               <div>High Quality Services for You</div></h2>
-            <p class="text-[#222222] mt-3 text-base 2xl:text-xl">TrioTree offers expert technical and project management consultants to hospitals and laboratories. With proven experience, we provide comprehensive strategy and implementation services for healthcare development.</p></div>
+            <p class="text-[#222222] mt-3 text-sm 2xl:text-lg">TrioTree offers expert technical and project management consultants to hospitals and laboratories. With proven experience, we provide comprehensive strategy and implementation services for healthcare development.</p></div>
           <div className="max-w-md  2xl:max-w-lg mr-20 ml-17 my-10">
             {
               Services.map((item, index) => (

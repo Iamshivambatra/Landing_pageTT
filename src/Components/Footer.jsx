@@ -59,7 +59,7 @@ export default function Footer() {
                 <div className="grid grid-cols-4 gap-8">
                     <div className="pr-6">
                         <img src={logo} alt="Triotree Logo" className="w-28 mb-3" />
-                        <p className="text-xs 2xl:text-sm leading-normal text-justify py-1">
+                        <p className="text-sm 2xl:text-base leading-normal text-justify py-1">
                             <strong>TrioTree Technologies</strong> is one of the leading
                             providers of healthcare solutions in India, UK and the Middle-East.
                             TrioTree Technologies was founded by a group of doctors and
@@ -68,7 +68,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <div className="text-[#1FA33E] font-semibold mb-6">More Links</div>
-                        <ul className="list-disc list-inside text-xs 2xl:text-sm space-y-5">
+                        <ul className="list-disc list-inside text-sm 2xl:text-base space-y-5">
                             <li>About us</li>
                             <li>Services</li>
                             <li>Why Choose Us</li>
@@ -78,7 +78,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <div className="text-[#1FA33E] font-semibold mb-6">More Links</div>
-                        <ul className="list-disc list-inside text-xs 2xl:text-sm space-y-5">
+                        <ul className="list-disc list-inside text-sm 2xl:text-base space-y-5">
                             <li>Integration Services</li>
                             <li>Implementation Services</li>
                             <li>Blogs</li>
@@ -88,7 +88,7 @@ export default function Footer() {
                     </div>
                     <div>
                         <div className="text-[#1FA33E] font-semibold mb-6">Contact Us</div>
-                        <ul className="space-y-9 text-xs 2xl:text-sm">
+                        <ul className="space-y-9 text-sm 2xl:text-sm">
                             <li className="flex items-center gap-2">
                                 <PhoneIcon className="w-4 h-4 text-[#BFD015]" />
                                 +91-120-4165164
