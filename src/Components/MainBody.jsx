@@ -61,25 +61,25 @@ export default function MainBody() {
   ];
   const [counts, setCounts] = useState(stats.map(() => 0));
 
- useEffect(() => {
-  const start = performance.now();
-  const duration = 1200;
-  const targets = stats.map(s => parseInt(s.value.replace(/\D/g, ""), 10));
+  useEffect(() => {
+    const start = performance.now();
+    const duration = 1200;
+    const targets = stats.map(s => parseInt(s.value.replace(/\D/g, ""), 10));
 
-  const animate = (now) => {
-    const progress = Math.min((now - start) / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
+    const animate = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
 
-    setCounts(targets.map(t => Math.floor(t * eased)));
+      setCounts(targets.map(t => Math.floor(t * eased)));
 
-    if (progress < 1) requestAnimationFrame(animate);
-  };
+      if (progress < 1) requestAnimationFrame(animate);
+    };
 
-  requestAnimationFrame(animate);
-}, []);
-// https://triotreelandingpage.vercel.app/
-// http://localhost:3000
-// serve -s dist
+    requestAnimationFrame(animate);
+  }, []);
+  // https://triotreelandingpage.vercel.app/
+  // http://localhost:3000
+  // serve -s dist
 
   return (
     <section>
@@ -105,13 +105,11 @@ export default function MainBody() {
       <div class="py-12 bg-white">
         <div class="max-w-5xl mx-20">
           <p class="text-blue-600 text-sm 2xl:text-lg font-medium mb-2">Our Products</p>
-          <h2 class="text-3xl md:text-3xl 2xl:text-4xl font-bold leading-snug max-w-[84%] 2xl:max-w-full">
-            <div>
-            <div>HISTree – Transforming Healthcare Workflow</div>
-            <div class=""> through &nbsp; Effortless, Efficient &amp; Quality Driven Product Innovation</div>
-            </div>
-            </h2>
-            
+          <div class="text-3xl md:text-3xl 2xl:text-4xl font-bold leading-snug max-w-full 2xl:max-w-full">
+            <h2>HISTree – Transforming Healthcare Workflow</h2>
+            <h2 class=""> through Effortless, Efficient &amp; Quality Driven Product Innovation</h2>
+          </div>
+
           <p class="text-[#222222] mt-3 text-base md:text-lg">TrioTree has a suite-of-the-art products and digital systems that change the way care is delivered.</p></div>
         <div className="flex mx-15 pt-7 mb-6 gap-2.5">
           {Products.map((item, index) => (
@@ -263,7 +261,7 @@ export default function MainBody() {
                 </div>
               </div>
             </div>
-             <div className="flex p-2.5 bg-white rounded-md">
+            <div className="flex p-2.5 bg-white rounded-md">
               <div className="w-1/4 h-28 relative">
                 <div className="absolute left-0 top-5 bg-[#BFD015] rounded-br-full rounded-tr-full p-1 text-xs 2xl:text-sm font-semibold">
                   <label htmlFor="Date">01, Jan 2024</label>
@@ -287,7 +285,7 @@ export default function MainBody() {
                 </div>
               </div>
             </div>
-             <div className="flex p-2.5 bg-white rounded-md">
+            <div className="flex p-2.5 bg-white rounded-md">
               <div className="w-1/4 h-28 relative">
                 <div className="absolute left-0 top-5 bg-[#BFD015] rounded-br-full rounded-tr-full p-1 text-xs 2xl:text-sm font-semibold">
                   <label htmlFor="Date">01, Jan 2024</label>
