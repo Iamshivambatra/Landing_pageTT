@@ -47,7 +47,7 @@ export default function CarouselWithContent() {
     ];
 
     return (
-        <div className="w-full h-[450px] overflow-hidden">
+        <div className="w-full h-[450px] 2xl:h-[520px] overflow-hidden">
             <Carousel
                 autoplay={true}
                 loop={true}
@@ -84,7 +84,7 @@ export default function CarouselWithContent() {
                                 </h2>
                             </div>
                             <div className="text-gray-600 leading-relaxed">
-                                <p className="text-sm">{item.description}</p>
+                                <p className="text-sm 2xl:text-base">{item.description}</p>
                                 <p className="text-[#3E3E3E] 2xl:text-lg font-semibold mt-2">
                                     {item.highlight}
                                 </p>
@@ -99,7 +99,7 @@ export default function CarouselWithContent() {
                             <img
                                 src={item.image}
                                 alt={item.title}
-                                className="md:w-[600px] w-full object-contain"
+                                className="md:w-[600px] 2xl:w-[665px] w-full object-contain"
                             />
                         </div>
                     </div>

@@ -91,13 +91,13 @@ export default function MainBody() {
             </div>
             <div>
               <p className="text-xl">
-                <span className="font-bold mr-1">
+                <span className="font-bold 2xl:text-lg mr-1">
                   {counts[index]}
                   {item.value.replace(/[0-9]/g, "") /* adds +, M, etc */}
                 </span>
                 {item.variable}
               </p>
-              <p className="text-sm 2xl:text-lg">{item.label}</p>
+              <p className="text-sm 2xl:text-xl">{item.label}</p>
             </div>
           </div>
         ))}

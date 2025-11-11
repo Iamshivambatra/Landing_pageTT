@@ -15,7 +15,7 @@ function App() {
   useLenis((lenis) => {
     (lenis)
   })
- useHeadingAnimation();
+  useHeadingAnimation();
   return (
     <ReactLenis root options={{ lerp: 0.06, duration: 1.7, smoothWheel: true, smoothTouch: true, syncTouch: true, easing: (t) => 1 - Math.pow(1 - t, 3) }}>
       <Navbar />
