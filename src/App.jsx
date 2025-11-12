@@ -1,4 +1,3 @@
-import './App.css';
 import Navbar from './Components/Navbar';
 import MainBody from './Components/MainBody';
 import Crousel from './Components/Crousel';
