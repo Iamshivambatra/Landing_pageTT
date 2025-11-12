@@ -85,7 +85,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("./assets/Images/Bg_his.svg") no-repeat center center / contain;
+  background: url("../public//assets/Images/Bg_his.svg") no-repeat center center / contain;
   transform-origin: center;
   z-index: 0;
   left: -30px;
@@ -97,7 +97,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("./assets/Images/Lis_bg.svg") no-repeat center center / contain;
+  background: url("../public/assets/Images/Lis_bg.svg") no-repeat center center / contain;
   transform-origin: center;
   z-index: 0;
   left: -30px;
@@ -109,7 +109,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("./assets/Images/mbula_bg.svg") no-repeat center center / contain;
+  background: url("../public/assets/Images/mbula_bg.svg") no-repeat center center / contain;
   transform-origin: center;
   z-index: 0;
   left: -30px;
@@ -122,7 +122,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("./assets/Images/Mobile_bg.svg") no-repeat center center / contain;
+  background: url("../public/assets/Images/Mobile_bg.svg") no-repeat center center / contain;
   transform-origin: center;
   z-index: 0;
   left: -30px;
@@ -135,7 +135,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("./assets/Images/Dashboard_bg.svg") no-repeat center center / contain;
+  background: url("../public/assets/Images/Dashboard_bg.svg") no-repeat center center / contain;
   transform-origin: center;
   z-index: 0;
   left: -80px;
