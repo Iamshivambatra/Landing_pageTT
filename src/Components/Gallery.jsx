@@ -7,14 +7,14 @@ import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
 
-import photo1 from '../assets/Triotree_peopleimage/Peopleeight.svg';
-import photo2 from '../assets/Triotree_peopleimage/Peoplesix.svg';
-import photo3 from '../assets/Triotree_peopleimage/Peopleseven.svg';
-import photo4 from '../assets/Triotree_peopleimage/Peoplefive.svg';
-import photo5 from '../assets/Triotree_peopleimage/Peoplethree.svg';
-import photo6 from '../assets/Triotree_peopleimage/Peopletwo.svg';
-import photo7 from '../assets/Triotree_peopleimage/Peoplefour.svg';
-import photo8 from '../assets/Triotree_peopleimage/Peopleone.svg';
+import photo1 from '/assets/Triotree_peopleimage/Peopleeight.svg';
+import photo2 from '/assets/Triotree_peopleimage/Peoplesix.svg';
+import photo3 from '/assets/Triotree_peopleimage/Peopleseven.svg';
+import photo4 from '/assets/Triotree_peopleimage/Peoplefive.svg';
+import photo5 from '/assets/Triotree_peopleimage/Peoplethree.svg';
+import photo6 from '/assets/Triotree_peopleimage/Peopletwo.svg';
+import photo7 from '/assets/Triotree_peopleimage/Peoplefour.svg';
+import photo8 from '/assets/Triotree_peopleimage/Peopleone.svg';
 
 export default function Gallery() {
     const firstRow = [photo1, photo2, photo3, photo4];

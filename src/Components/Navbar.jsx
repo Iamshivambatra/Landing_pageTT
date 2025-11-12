@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/Images/LogoTriotree.svg";
+import logo from "/assets/Images/LogoTriotree.svg";
 
 export default function Navbar() {
   const [active, setActive] = useState("Home");

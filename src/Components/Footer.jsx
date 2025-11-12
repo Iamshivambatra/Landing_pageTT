@@ -1,16 +1,16 @@
-import ConnectLady from '../assets/Images/Connect_lady.svg'
-import circleArrow from '../assets/Images/Circlearrow.svg'
+import ConnectLady from '/assets/Images/Connect_lady.svg'
+import circleArrow from '/assets/Images/Circlearrow.svg'
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/Images/LogoTriotree.svg";
+import logo from "/assets/Images/LogoTriotree.svg";
 import {
     PhoneIcon,
     EnvelopeIcon,
     MapPinIcon,
 } from "@heroicons/react/24/outline";
-import FacebookIcon from '../assets/Images/Fb.svg';
-import twittericon from '../assets/Images/twitterX.svg';
-import LinkedinIcon from '../assets/Images/linkedin.svg'
+import FacebookIcon from '/assets/Images/Fb.svg';
+import twittericon from '/assets/Images/twitterX.svg';
+import LinkedinIcon from '/assets/Images/linkedin.svg'
 export default function Footer() {
 
 

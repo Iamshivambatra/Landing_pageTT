@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "@material-tailwind/react";
-import desktopImg from "../assets/Images/desktopImg.svg";
+import desktopImg from "/assets/Images/desktopImg.svg";
 
 export default function CarouselWithContent() {
     const slides = [

@@ -1,32 +1,34 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Gallery from '../Components/Gallery';
-import Bg_his from "../assets/Images/Bg_his.svg";
-import hospitaLimg from "../assets/Images/hr.svg";
-import Lis_logo from "../assets/Images/LISTree_logo.svg";
-import Dashboard_logo from "../assets/Images/Dashboard_logo.svg";
-import mobileapp_logo from "../assets/Images/Mobileapp_logo.svg";
-import ambula_logo from "../assets/Images/AmbulaTree_logo.svg";
-import stat_hospitallogo from '../assets/Images/cil_hospital.svg';
-import smily from '../assets/Images/Smily.svg';
-import stethoscope from '../assets/Images/stethoscope.svg';
-import Idea_logo from '../assets/Images/expidea.svg';
-import Blocks from '../assets/Images/Blocks.svg';
-import Services_area from '../assets/Images/OurServices_page.svg';
-import DevIcon from '../assets/Images/Codingimg.svg';
-import IntegrationIcon from '../assets/Images/Bulb.svg';
-import ImplementationIcon from '../assets/Images/Implementimg.svg';
-import officeimg from '../assets/Images/Officeimg.svg';
-import arrow from '../assets/Images/Arrow.svg';
-import rajagiri from '../assets/Hospital_logos/rajagiri.svg';
-import ayushman from '../assets/Hospital_logos/ayushman.svg';
-import blogpost1 from '../assets/Images/BlogPost1.svg'
-import heart from '../assets/Images/Heart.svg'
-import awards from '../assets/Images/Awards.svg'
-import partner1 from '../assets/marquee_imgs/DUBAI.svg'
-import partner2 from '../assets/marquee_imgs/FOUR_courners.svg'
-import partner3 from '../assets/marquee_imgs/MALAYSIA.svg'
-import partner4 from '../assets/marquee_imgs/SYSCRAFT_KENYA.svg'
+import Bg_his from "/assets/Images/Bg_his.svg";
+import hospitaLimg from "/assets/Images/hr.svg";
+import Lis_logo from "/assets/Images/LISTree_logo.svg";
+import Dashboard_logo from "/assets/Images/Dashboard_logo.svg";
+import mobileapp_logo from "/assets/Images/Mobileapp_logo.svg";
+import ambula_logo from "/assets/Images/AmbulaTree_logo.svg";
+import stat_hospitallogo from '/assets/Images/cil_hospital.svg';
+import smily from '/assets/Images/Smily.svg';
+import stethoscope from '/assets/Images/stethoscope.svg';
+import Idea_logo from '/assets/Images/expidea.svg';
+import Blocks from '/assets/Images/Blocks.svg';
+import Services_area from '/assets/Images/OurServices_page.svg';
+import DevIcon from '/assets/Images/Codingimg.svg';
+import IntegrationIcon from '/assets/Images/Bulb.svg';
+import ImplementationIcon from '/assets/Images/Implementimg.svg';
+import officeimg from '/assets/Images/Officeimg.svg';
+import arrow from '/assets/Images/Arrow.svg';
+import rajagiri from '/assets/Hospital_logos/rajagiri.svg';
+import ayushman from '/assets/Hospital_logos/ayushman.svg';
+import blogpost1 from '/assets/Images/BlogPost1.svg'
+import heart from '/assets/Images/Heart.svg'
+import awards from '/assets/Images/Awards.svg'
+import partner1 from '/assets/marquee_imgs/DUBAI.svg'
+import partner2 from '/assets/marquee_imgs/FOUR_courners.svg'
+import partner3 from '/assets/marquee_imgs/MALAYSIA.svg'
+import partner4 from '/assets/marquee_imgs/SYSCRAFT_KENYA.svg'
+import Chatbtn from '/assets/Images/Chat_button.svg'
+
 
 export default function MainBody() {
 
@@ -83,6 +85,7 @@ export default function MainBody() {
 
   return (
     <section>
+      <div className="fixed bottom-0 right-0 h-[90px] w-[90px] z-1"><img src={Chatbtn} alt={Chatbtn} /></div>
       <div class="bg-[#1FA33E] text-white flex justify-between items-center py-4 px-20 rounded-r-full mr-30">
         {stats.map((item, index) => (
           <div key={index} className="flex items-center space-x-3">
