@@ -47,7 +47,7 @@ export default function CarouselWithContent() {
     ];
 
     return (
-        <div className="w-full h-[450px] 2xl:h-[520px] overflow-hidden">
+        <div className="w-full h-[450px] max-sm:h-[631px] 2xl:h-[520px] overflow-hidden">
             <Carousel
                 autoplay={true}
                 loop={true}
@@ -56,7 +56,7 @@ export default function CarouselWithContent() {
                 nextArrow={() => null}
                 className="rounded-xl w-full h-full Carousel_body"
                 navigation={({ setActiveIndex, activeIndex, length }) => (
-                    <div className="absolute left-1/2 flex -translate-x-1/2 gap-2 pl-[83px] bottom-[60px]">
+                    <div className="absolute left-1/2 flex -translate-x-1/2 gap-2 pl-[83px] bottom-[60px] max-sm:bottom-[15px] max-sm:pl-[30px] max-sm:left-[calc(0.85*100%)]">
                         {new Array(length).fill("").map((_, i) => (
                             <span
                                 key={i}
@@ -71,7 +71,7 @@ export default function CarouselWithContent() {
                 {slides.map((item, index) => (
                     <div
                         key={index}
-                        className="flex flex-col md:flex-row items-center justify-between h-full w-full bg-triotree p-10 md:px-20"
+                        className="flex flex-col md:flex-row items-center justify-between h-full w-full bg-triotree p-10 md:px-20 max-sm:px-5"
                     >
                         {/* Left Section */}
                         <div className="w-full md:w-1/2 space-y-5 text-left">

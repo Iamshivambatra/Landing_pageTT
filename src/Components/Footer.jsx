@@ -1,8 +1,12 @@
 import ConnectLady from '/assets/Images/Connect_lady.svg'
 import circleArrow from '/assets/Images/Circlearrow.svg'
 import React from "react";
+import emailjs from "emailjs-com";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "/assets/Images/LogoTriotree.svg";
+import 'react-toastify/dist/ReactToastify.css';
+
 import {
     PhoneIcon,
     EnvelopeIcon,
@@ -11,8 +15,28 @@ import {
 import FacebookIcon from '/assets/Images/Fb.svg';
 import twittericon from '/assets/Images/twitterX.svg';
 import LinkedinIcon from '/assets/Images/linkedin.svg'
+import { ToastContainer, toast } from 'react-toastify';
 export default function Footer() {
 
+    const [showAlert, setShowAlert] = useState(true);
+    const formRef = useRef();
+    const notify = () => toast.success("Thanks For Contacting");
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "service_5t1e9i6",
+            "template_lna1i5r",
+            formRef.current,
+            "ws18bJq8GYzDpmlxv"
+        )
+            .then(() => {
+                setShowAlert(true);
+                notify();
+                setTimeout(() => setShowAlert(false), 3000);
+                formRef.current.reset();
+            })
+    };
 
     return (
         <footer>
@@ -27,11 +51,11 @@ export default function Footer() {
                     <div className='Arrow_Left'></div>
                     <div className='bg-[#EFF3CD] w-full h-full'>
                         <div className="flex justify-center items-center p-8">
-                            <form action="/index" method="post" className="flex flex-col w-full gap-4 2xl:text-xl">
-                                <input type="text" placeholder="Full Name" className="bg-white border border-gray-200 px-3 py-2 text-sm 2xl:text-base outline-none focus:border-[#1FA33E]" />
-                                <input type="tel" placeholder="Contact No." className="bg-white border border-gray-200 px-3 py-2 text-sm 2xl:text-base outline-none focus:border-[#1FA33E]" />
-                                <input type="email" placeholder="Email ID" className="bg-white border border-gray-200 px-3 py-2 text-sm 2xl:text-base outline-none focus:border-[#1FA33E]" />
-                                <textarea placeholder="Address" className="bg-white border border-gray-200 overflow-auto h-64 2xl:h-75 px-3 py-2 2xl:text-base text-sm outline-none resize-none focus:border-[#1FA33E]" rows="3"></textarea>
+                            <form ref={formRef} onSubmit={sendEmail} className="flex flex-col w-full gap-4 2xl:text-xl">
+                                <input type="text" placeholder="Full Name" name="full_name" className="bg-white border border-gray-200 px-3 py-2 text-sm 2xl:text-base outline-none focus:border-[#1FA33E]" />
+                                <input type="tel" placeholder="Contact No." name="contact_no" className="bg-white border border-gray-200 px-3 py-2 text-sm 2xl:text-base outline-none focus:border-[#1FA33E]" />
+                                <input type="email" placeholder="Email ID" name="email_id" className="bg-white border border-gray-200 px-3 py-2 text-sm 2xl:text-base outline-none focus:border-[#1FA33E]" />
+                                <textarea placeholder="Address" name="address" className="bg-white border border-gray-200 overflow-auto h-64 2xl:h-75 px-3 py-2 2xl:text-base text-sm outline-none resize-none focus:border-[#1FA33E]" rows="3"></textarea>
                                 <button type="submit" className="bg-[#1FA33E] text-white font-semibold uppercase py-2 hover:bg-green-700 transition-all duration-200">Submit</button>
                             </form>
                         </div>
@@ -117,19 +141,30 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='py-3 px-20 bg-[#D8E6DB] text-xs 2xl:text-sm items-center gap-2 flex flex-wrap justify-between'>
-                <p className="text-center flex">
-                    © 2014 - 2025 <strong className='px-2'>Triotree Technologies Pvt. Ltd.</strong><span className='px-2 border-r'>All Rights Reserved</span>
-                    <span className='px-2 '>Triotree Technologies Rated{" "}</span>
-                    <span className="text-[#1FA33E] font-semibold pr-2">4.4/5</span> based on 197 reviews
+            <div className='py-3 px-20 bg-[#D8E6DB] text-xs 2xl:text-sm items-center gap-2 flex flex-wrap justify-between max-sm:p-[10px_20px] max-sm:block'>
+                <p className="text-center flex max-sm:flex-wrap max-sm:justify-center">
+                    © 2014 - 2025 <strong className='px-2'>Triotree Technologies Pvt. Ltd.</strong><span className='px-2 border-r max-sm:border-0'>All Rights Reserved</span>
+                    <span className='px-2 max-sm:hidden'>Triotree Technologies Rated{" "}</span>
+                    <span className="text-[#1FA33E] font-semibold pr-2 max-sm:hidden">4.4/5</span>
+                    <span className='max-sm:hidden'> based on 197 reviews</span>
                 </p>
                 <Link
                     to="/privacy-policy"
-                    className="text-blue-600 hover:underline font-medium whitespace-nowrap flex"
+                    className="text-blue-600 hover:underline font-medium whitespace-nowrap flex max-sm:justify-center"
                 >
                     Privacy Policy
                 </Link>
             </div>
+            {showAlert && (
+                <ToastContainer
+                    autoClose={2000}
+                    closeOnClick
+                    pauseOnHover
+                    theme="light"
+                    limit={3}
+                    newestOnTop
+                />
+            )}
         </footer>
     );
 }

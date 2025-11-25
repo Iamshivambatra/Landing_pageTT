@@ -5,7 +5,6 @@ import logo from "/assets/Images/LogoTriotree.svg";
 export default function Navbar() {
   const [active, setActive] = useState("Home");
   const [menuOpen, setMenuOpen] = useState(false);
-
   const navItems = [
     "Home",
     "Products",
@@ -26,7 +25,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="sticky top-0 z-50 bg-white border-b border-[#E8E8E8]">
+    <div id="Navbar" className="sticky top-0 z-50 bg-white border-b border-[#E8E8E8]">
       <nav className="flex items-center justify-between px-6 lg:pr-19 lg:pl-20 py-3">
         {/* Left - Logo */}
         <div className="flex items-center space-x-2">
@@ -55,7 +54,7 @@ export default function Navbar() {
 
         {/* Right - Button */}
         <div className="flex items-center gap-3">
-          <button className="hidden lg:block border border-blue-400 text-blue-500 text-xs 2xl:text-sm font-semibold px-4 py-2 rounded-full hover:bg-blue-50 transition-all duration-200">
+          <button id="DarkTheme" className="hidden lg:block border border-blue-400 text-blue-500 text-xs 2xl:text-sm font-semibold px-4 py-2 rounded-full hover:bg-blue-50 transition-all duration-200">
             BOOK A DEMO
           </button>
 

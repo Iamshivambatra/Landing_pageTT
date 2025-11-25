@@ -15,6 +15,8 @@
   --color-borderGray: #c3c3c3;
 
   --breakpoint-2xl: 1512px;
+
+  --breakpoint-sm: 500px;
 }
 
 @layer base {
@@ -338,5 +340,95 @@ body {
 @media (min-width: 1517px) {
   .Prd::before {
     background-size: 180px !important;
+  }
+}
+
+
+.Dark_body {
+  background-color: #141414 !important;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out-right {
+  0% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+}
+
+.toast-enter {
+  animation: slide-in-right 0.4s ease-out forwards;
+}
+
+.toast-exit {
+  animation: slide-out-right 0.4s ease-in forwards;
+}
+
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
+
+
+
+@media (max-width: 500px) {
+  .Prd::before {
+    display: none;
+  }
+
+  .Prd0 {
+    border: none;
+    background: #fff2ed;
+    margin: 15px 0px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px #fff2ed;
+  }
+
+  .Prd1 {
+    border: none;
+    background: #edfbe8;
+    margin: 15px 0px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px #edfbe8;
+  }
+
+  .Prd2 {
+    border: none;
+    background: #e8f6fb;
+    margin: 15px 0px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px #e8f6fb;
+  }
+
+  .Prd3 {
+    border: none;
+    background: #eceefc;
+    margin: 15px 0px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px #eceefc;
+  }
+
+  .Prd4 {
+    border: none;
+    background: #fffaed;
+    margin: 15px 0px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px #fffaed;
   }
 }

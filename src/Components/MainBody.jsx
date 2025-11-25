@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Gallery from '../Components/Gallery';
-import Bg_his from "/assets/Images/Bg_his.svg";
 import hospitaLimg from "/assets/Images/hr.svg";
 import Lis_logo from "/assets/Images/LISTree_logo.svg";
 import Dashboard_logo from "/assets/Images/Dashboard_logo.svg";
@@ -28,7 +27,6 @@ import partner2 from '/assets/marquee_imgs/FOUR_courners.svg'
 import partner3 from '/assets/marquee_imgs/MALAYSIA.svg'
 import partner4 from '/assets/marquee_imgs/SYSCRAFT_KENYA.svg'
 import Chatbtn from '/assets/Images/Chat_button.svg'
-
 
 export default function MainBody() {
 
@@ -85,28 +83,33 @@ export default function MainBody() {
 
   return (
     <section>
-      <div className="fixed bottom-0 right-0 h-[90px] w-[90px] z-1"><img src={Chatbtn} alt={Chatbtn} /></div>
-      <div class="bg-[#1FA33E] text-white flex justify-between items-center py-4 px-20 rounded-r-full mr-30">
+      <div className="fixed bottom-5 right-0 h-[90px] w-[90px] z-1"><img src={Chatbtn} alt={Chatbtn} /></div>
+      <div class="bg-[#1FA33E] text-white flex justify-between items-center py-4 px-20 rounded-r-full mr-30 
+      max-sm:block max-sm:bg-white max-sm:rounded-none max-sm:px-0 max-sm:mr-0">
+        <div className="hidden max-sm:flex max-sm:gap-2.5 max-sm:p-[15px_20px] items-center justify-around">
+          <div><img src={hospitaLimg} alt={hospitaLimg} className="h-14 w-[55px]"/></div>
+          <div className="text-[#12852D] font-extrabold text-xl">Our Impact in Healthcare</div>
+        </div>
         {stats.map((item, index) => (
-          <div key={index} className="flex items-center space-x-3">
+          <div key={index} className="flex items-center space-x-3 max-sm:m-[15px_20px] max-sm:p-[15px_20px] max-sm:rounded-xl max-sm:shadow-[0_4px_10px_rgba(0,0,0,0.05)] max-sm:border max-sm:border-[#e0e0e0]">
             <div className="bg-[#12852D] p-2">
               <img src={item.icon} alt={item.label} className="w-8 h-8" />
             </div>
             <div>
-              <p className="text-xl">
-                <span className="font-bold 2xl:text-lg mr-1">
+              <p className="text-xl max-sm:text-[#12852D]">
+                <span className="font-bold 2xl:text-lg mr-1 ">
                   {counts[index]}
                   {item.value.replace(/[0-9]/g, "") /* adds +, M, etc */}
                 </span>
                 {item.variable}
               </p>
-              <p className="text-sm 2xl:text-xl">{item.label}</p>
+              <p className="text-sm 2xl:text-xl max-sm:text-[#12852D]">{item.label}</p>
             </div>
           </div>
         ))}
       </div>
-      <div class="py-12 bg-white">
-        <div class="max-w-5xl mx-20">
+      <div class="py-12 max-sm:py-[15px] bg-white">
+        <div class="max-w-5xl mx-20 max-sm:mx-5">
           <p class="text-blue-600 text-sm 2xl:text-lg font-medium mb-2">Our Products</p>
           <div class="text-3xl md:text-3xl 2xl:text-4xl font-bold leading-snug max-w-full 2xl:max-w-full">
             <h2>HISTree – Transforming Healthcare Workflow</h2>
@@ -114,7 +117,7 @@ export default function MainBody() {
           </div>
 
           <p class="text-[#222222] mt-3 text-base">TrioTree has a suite-of-the-art products and digital systems that change the way care is delivered.</p></div>
-        <div className="flex mx-15 pt-7 mb-6 gap-2.5">
+        <div className="flex mx-15 pt-7 mb-6 gap-2.5 max-sm:block max-sm:m-[0_40px]">
           {Products.map((item, index) => (
             <div key={index} className={`border-r border-r-[#BFD015] bg-cover py-6 px-4 2xl:px-10 Prd Prd${index}`}>
               <div className="mb-2.5">
