@@ -56,6 +56,29 @@ export default function MainBody() {
     "Top 100 Healthcare Leaders Award – IFAH 2019",
     "An ISO 9001:2015 and ISO 27001:2013 Certified Company",
   ];
+  const blogPosts = [
+  {
+    date: "01, Jan 2024",
+    title: "Impact of Winter on Our Health",
+    category: "Healthcare, Healthcare Technology",
+    comments: "No comments",
+    img: blogpost1,
+  },
+  {
+    date: "01, Jan 2024",
+    title: "Impact of Winter on Our Health",
+    category: "Healthcare, Healthcare Technology",
+    comments: "No comments",
+    img: blogpost1,
+  },
+  {
+    date: "01, Jan 2024",
+    title: "Impact of Winter on Our Health",
+    category: "Healthcare, Healthcare Technology",
+    comments: "No comments",
+    img: blogpost1,
+  },
+];
   const logos = [
     partner1, partner2, partner3, partner4
   ];
@@ -177,7 +200,7 @@ export default function MainBody() {
         </div>
       </div>
       <Gallery />
-      <div class="py-12 mx-20 flex justify-between">
+      <div class="py-12 mx-20 flex justify-between max-sm:mx-5 max-sm:py-5">
         <div className="w-2/5 flex flex-col py-10 gap-5">
           <div className="text-3xl md:text-3xl 2xl:text-4xl  font-bold leading-snug "><h2>What our clients are saying</h2></div>
           <div><label htmlFor="" className="text-[#12852D] pr-18 font-medium leading-snug text-3xl 2xl:text-4xl">Help us improve our
@@ -217,10 +240,10 @@ export default function MainBody() {
           </div>
         </div>
       </div>
-      <div class="py-12 px-20 bg-[#EEF8F0] gap-2.5">
+      <div class="py-12 px-20 bg-[#EEF8F0] gap-2.5 max-sm:px-5 max-sm:py-5">
         <div className="text-3xl md:text-3xl 2xl:text-4xl mb-6 font-semibold leading-snug"><h2>Blogs articles</h2></div>
-        <div className="flex justify-between gap-2.5">
-          <div className="p-2.5 bg-white rounded-md w-3/5">
+        <div className="flex justify-between gap-2.5 max-sm:block">
+          <div className="p-2.5 bg-white rounded-md w-3/5 max-sm:w-full max-sm:mb-2.5">
             <div className="w-full h-56 relative">
               <div className="absolute right-0 top-10 bg-[#BFD015] rounded-bl-full rounded-tl-full p-2 2xl:text-lg font-semibold"><label htmlFor="Date">01, Jan 2024</label></div>
               <img className="w-full h-full object-cover rounded-md" src={blogpost1} alt={blogpost1} />
@@ -242,83 +265,50 @@ export default function MainBody() {
               </div>
             </div>
           </div>
-          <div className="flex gap-2.5 flex-col w-2/5">
-            <div className="flex p-2.5 bg-white rounded-md">
-              <div className="w-1/4 h-28 relative">
-                <div className="absolute left-0 top-5 bg-[#BFD015] rounded-br-full rounded-tr-full p-1 text-xs 2xl:text-sm font-semibold">
-                  <label htmlFor="Date">01, Jan 2024</label>
+          <div className="flex gap-2.5 flex-col w-2/5 max-sm:w-full">
+            {blogPosts.map((post, idx) => (
+              <div className="flex p-2.5 bg-white rounded-md" key={idx} post={post}>
+                <div className="w-1/4 h-28 relative">
+                  <div className="absolute left-0 top-5 bg-[#BFD015] rounded-br-full rounded-tr-full p-1 text-xs 2xl:text-sm font-semibold">
+                    <label>{post.date}</label>
+                  </div>
+                  <img
+                    className="w-full h-full object-cover rounded-md"
+                    src={post.img}
+                    alt={post.title}
+                  />
                 </div>
-                <img className="w-full h-full object-cover rounded-md" src={blogpost1} alt={blogpost1} />
-              </div>
-              <div className="p-2.5 w-3/4">
-                <div className="flex justify-between">
-                  <div className="text-sm 2xl:text-base font-bold">Impact of Winter on Our Health</div>
-                  <span className="flex gap-1.5 items-center">
-                    <label htmlFor="LikeCount" className="text-[#8A8A8A] text-sm font-bold"></label>
-                    <img className="h-5 w-5" alt={heart} src={heart}></img>
-                  </span>
-                </div>
-                <div className="text-xs 2xl:text-sm"><span className="border-r">Posted in Healthcare, Healthcare Technology </span><span className="px-1">No comments</span></div>
-                <hr className="text-[#BCBCBC] border-[#BCBCBC] my-2" />
-                <div className="text-sm leading-relaxed">
-                  <p className="w-full overflow-hidden 2xl:text-lg text-ellipsis whitespace-nowrap">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="flex p-2.5 bg-white rounded-md">
-              <div className="w-1/4 h-28 relative">
-                <div className="absolute left-0 top-5 bg-[#BFD015] rounded-br-full rounded-tr-full p-1 text-xs 2xl:text-sm font-semibold">
-                  <label htmlFor="Date">01, Jan 2024</label>
-                </div>
-                <img className="w-full h-full object-cover rounded-md" src={blogpost1} alt={blogpost1} />
-              </div>
-              <div className="p-2.5 w-3/4">
-                <div className="flex justify-between">
-                  <div className="text-sm 2xl:text-base font-bold">Impact of Winter on Our Health</div>
-                  <span className="flex gap-1.5 items-center">
-                    <label htmlFor="LikeCount" className="text-[#8A8A8A] text-sm font-bold"></label>
-                    <img className="h-5 w-5" alt={heart} src={heart}></img>
-                  </span>
-                </div>
-                <div className="text-xs 2xl:text-sm"><span className="border-r">Posted in Healthcare, Healthcare Technology </span><span className="px-1">No comments</span></div>
-                <hr className="text-[#BCBCBC] border-[#BCBCBC] my-2" />
-                <div className="text-sm leading-relaxed">
-                  <p className="w-full overflow-hidden 2xl:text-lg text-ellipsis whitespace-nowrap">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                  </p>
+
+                <div className="p-2.5 w-3/4">
+                  <div className="flex justify-between">
+                    <div className="text-sm 2xl:text-base font-bold">{post.title}</div>
+
+                    <span className="flex gap-1.5 items-center">
+                      <label className="text-[#8A8A8A] text-sm font-bold"></label>
+                      <img className="h-5 w-5" src={heart} alt="like" />
+                    </span>
+                  </div>
+
+                  <div className="text-xs 2xl:text-sm">
+                    <span className="border-r">Posted in {post.category}</span>
+                    <span className="px-1">{post.comments}</span>
+                  </div>
+
+                  <hr className="text-[#BCBCBC] border-[#BCBCBC] my-2" />
+
+                  <div className="text-sm leading-relaxed">
+                    <p className="w-full overflow-hidden 2xl:text-lg text-ellipsis whitespace-nowrap">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting
+                      industry...
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="flex p-2.5 bg-white rounded-md">
-              <div className="w-1/4 h-28 relative">
-                <div className="absolute left-0 top-5 bg-[#BFD015] rounded-br-full rounded-tr-full p-1 text-xs 2xl:text-sm font-semibold">
-                  <label htmlFor="Date">01, Jan 2024</label>
-                </div>
-                <img className="w-full h-full object-cover rounded-md" src={blogpost1} alt={blogpost1} />
-              </div>
-              <div className="p-2.5 w-3/4">
-                <div className="flex justify-between">
-                  <div className="text-sm 2xl:text-base font-bold">Impact of Winter on Our Health</div>
-                  <span className="flex gap-1.5 items-center">
-                    <label htmlFor="LikeCount" className="text-[#8A8A8A] text-sm font-bold"></label>
-                    <img className="h-5 w-5" alt={heart} src={heart}></img>
-                  </span>
-                </div>
-                <div className="text-xs 2xl:text-sm"><span className="border-r">Posted in Healthcare, Healthcare Technology </span><span className="px-1">No comments</span></div>
-                <hr className="text-[#BCBCBC] border-[#BCBCBC] my-2" />
-                <div className="text-sm leading-relaxed">
-                  <p className="w-full overflow-hidden 2xl:text-lg text-ellipsis whitespace-nowrap">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-between mx-20 py-12 bg-white gap-10">
+      <div className="flex flex-col md:flex-row items-center justify-between mx-20 py-12 bg-white gap-10 max-sm:mx-5 max-sm:py-5">
         <div className="md:w-1/2">
           <h2 className="text-3xl 2xl:text-4xl font-bold text-gray-900 mb-4">
             Awards & Accolades
@@ -338,13 +328,13 @@ export default function MainBody() {
           </div>
         </div>
       </div>
-      <div className="px-20 bg-[#12852D] flex gap-2.5">
-        <div className="w-1/7 flex items-center pr-5 border-r border-[#ffffff] my-2.5">
+      <div className="px-20 bg-[#12852D] flex gap-2.5 max-sm:px-5">
+        <div className="w-1/7 flex items-center pr-5 border-r border-[#ffffff] my-2.5 max-sm:w-2/7">
           <div className="text-xl md:text-2xl 2xl:text-3xl text-white font-semibold leading-snug">
             Our Partners
           </div>
         </div>
-        <div className="marquee w-6/7">
+        <div className="marquee w-6/7 max-sm:w-5/7">
           <ul className="marquee__content">
             {logos.map((logo, index) => (
               <li key={index} className="marquee__item">

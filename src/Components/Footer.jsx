@@ -40,15 +40,15 @@ export default function Footer() {
 
     return (
         <footer>
-            <div className="py-12 mx-20 flex gap-4">
-                <div className="w-3/5">
+            <div className="py-12 mx-20 flex gap-4 max-sm:py-[15px] max-sm:mx-5 max-sm:block">
+                <div className="w-3/5 max-sm:w-full">
                     <div><h2 className="text-3xl 2xl:text-4xl text-[#1FA33E] font-bold mb-6">Let's Connect!</h2></div>
                     <div className="text-3xl 2xl:text-4xl font-bold mb-4">Our experts help you achieve your dream</div>
                     <div className="text-lg 2xl:text-xl font-medium mb-4">An expert support makes it possible!</div>
-                    <div className="w-full h-87 2xl:h-100"><img className='h-full object-cover w-full' src={ConnectLady} alt={ConnectLady} /></div>
+                    <div className="w-full h-87 2xl:h-100 max-sm:hidden"><img className='h-full object-cover w-full' src={ConnectLady} alt={ConnectLady} /></div>
                 </div>
-                <div className="w-3/5 flex">
-                    <div className='Arrow_Left'></div>
+                <div className="w-3/5 flex max-sm:w-full">
+                    <div className='Arrow_Left max-sm:hidden'></div>
                     <div className='bg-[#EFF3CD] w-full h-full'>
                         <div className="flex justify-center items-center p-8">
                             <form ref={formRef} onSubmit={sendEmail} className="flex flex-col w-full gap-4 2xl:text-xl">
@@ -62,8 +62,8 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='flex'>
-                <div className='bg-[#D6F8DE] w-1/2 pl-20 py-12 pr-10'>
+            <div className='flex max-sm:block'>
+                <div className='bg-[#D6F8DE] w-1/2 pl-20 py-12 pr-10 max-sm:px-5 max-sm:w-full max-sm:mb-1 max-sm:py-[15px]'>
                     <div><h2 className="text-3xl font-bold mb-6">Ready to start?</h2></div>
                     <div className="text-base 2xl:text-lg font-medium mb-4">Get in-context advice from our experts about your most pressing issues or areas of interest</div>
                     <div className='flex gap-2.5'>
@@ -71,7 +71,7 @@ export default function Footer() {
                         <div><img src={circleArrow} alt={circleArrow} /></div>
                     </div>
                 </div>
-                <div className='bg-[#E7FFED] w-1/2 py-12 pl-10 pr-20'>
+                <div className='bg-[#E7FFED] w-1/2 py-12 pl-10 pr-20 max-sm:px-5 max-sm:w-full max-sm:py-[15px]'>
                     <div><h2 className="text-3xl font-bold mb-6">Looking for a Job?</h2></div>
                     <div className="text-base 2xl:text-lg font-medium mb-4">We know what it takes to get the job you deserve. join the most successful and innovative research company.</div>
                     <div className='flex gap-2.5'>
@@ -79,8 +79,8 @@ export default function Footer() {
                         <div><img src={circleArrow} alt={circleArrow} /></div>
                     </div></div>
             </div>
-            <div className='flex py-12 mx-20'>
-                <div className="grid grid-cols-4 gap-8">
+            <div className='flex py-12 mx-20 max-sm:py-5 max-sm:mx-5'>
+                <div className="grid grid-cols-4 gap-8 max-sm:[grid-template:none]">
                     <div className="pr-6">
                         <img src={logo} alt="Triotree Logo" className="w-28 mb-3" />
                         <p className="text-sm 2xl:text-base leading-normal text-justify py-1">

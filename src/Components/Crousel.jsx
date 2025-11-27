@@ -56,7 +56,7 @@ export default function CarouselWithContent() {
                 nextArrow={() => null}
                 className="rounded-xl w-full h-full Carousel_body"
                 navigation={({ setActiveIndex, activeIndex, length }) => (
-                    <div className="absolute left-1/2 flex -translate-x-1/2 gap-2 pl-[83px] bottom-[60px] max-sm:bottom-[15px] max-sm:pl-[30px] max-sm:left-[calc(0.85*100%)]">
+                    <div className="absolute left-1/2 flex -translate-x-1/2 gap-2 pl-[83px] bottom-[60px] max-sm:bottom-[10px] max-sm:pl-[30px] max-sm:left-[calc(0.85*100%)]">
                         {new Array(length).fill("").map((_, i) => (
                             <span
                                 key={i}
