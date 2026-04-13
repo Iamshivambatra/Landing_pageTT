@@ -24,19 +24,32 @@ export default function Footer() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(
-            "service_5t1e9i6",
-            "template_lna1i5r",
-            formRef.current,
-            "ws18bJq8GYzDpmlxv"
-        )
+        emailjs
+            .sendForm(
+                "service_5t1e9i6",
+                "template_lna1i5r",
+                formRef.current,
+                "ws18bJq8GYzDpmlxv"
+            )
+            .then(() => {
+                return emailjs.sendForm(
+                    "service_5t1e9i6",
+                    "template_arsrlks",
+                    formRef.current,
+                    "ws18bJq8GYzDpmlxv"
+                );
+            })
             .then(() => {
                 setShowAlert(true);
                 notify();
                 setTimeout(() => setShowAlert(false), 3000);
                 formRef.current.reset();
             })
+            .catch(() => {
+                toast.error("Something went wrong. Please try again.");
+            });
     };
+
 
     return (
         <footer>
